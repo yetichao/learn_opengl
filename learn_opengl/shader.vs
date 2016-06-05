@@ -11,6 +11,6 @@ void main()
     //gl_Position = vec4(translation.x + position.x, translation.y - position.y,
     //translation.z  + position.z, 1.0f);
     gl_Position = vec4(position, 1.0f);
-    ourColor = color;
-    //outPosition = position;
+    //ourColor = color;
+    outPosition = position;
 }

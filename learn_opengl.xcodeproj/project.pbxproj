@@ -28,6 +28,9 @@
 		B50427331D029FB6001CB89E /* trangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50427311D029FB6001CB89E /* trangle.cpp */; };
 		B50427361D02A027001CB89E /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50427341D02A027001CB89E /* texture.cpp */; };
 		B504273B1D02A1DC001CB89E /* shaders_p.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50427391D02A1DC001CB89E /* shaders_p.cpp */; };
+		B50427441D05BFF8001CB89E /* transformation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50427421D05BFF8001CB89E /* transformation.cpp */; };
+		B53A99731D099919000D9198 /* coordinate_system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B53A99711D099919000D9198 /* coordinate_system.cpp */; };
+		B53A99761D099A3D000D9198 /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B53A99741D099A3D000D9198 /* camera.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -74,6 +77,12 @@
 		B50427381D02A0DE001CB89E /* shader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
 		B50427391D02A1DC001CB89E /* shaders_p.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shaders_p.cpp; sourceTree = "<group>"; };
 		B504273A1D02A1DC001CB89E /* shaders_p.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shaders_p.h; sourceTree = "<group>"; };
+		B50427421D05BFF8001CB89E /* transformation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = transformation.cpp; sourceTree = "<group>"; };
+		B50427431D05BFF8001CB89E /* transformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transformation.h; sourceTree = "<group>"; };
+		B53A99711D099919000D9198 /* coordinate_system.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = coordinate_system.cpp; sourceTree = "<group>"; };
+		B53A99721D099919000D9198 /* coordinate_system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coordinate_system.h; sourceTree = "<group>"; };
+		B53A99741D099A3D000D9198 /* camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = camera.cpp; sourceTree = "<group>"; };
+		B53A99751D099A3D000D9198 /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				B50427041D029D4E001CB89E /* main.cpp */,
+				B53A99741D099A3D000D9198 /* camera.cpp */,
+				B53A99751D099A3D000D9198 /* camera.h */,
 				B50427291D029EC1001CB89E /* shader_str.h */,
 				B504272A1D029EF8001CB89E /* shader_path.h */,
 				B504272B1D029F25001CB89E /* shaders.cpp */,
@@ -151,6 +162,10 @@
 				B50427381D02A0DE001CB89E /* shader.vs */,
 				B50427391D02A1DC001CB89E /* shaders_p.cpp */,
 				B504273A1D02A1DC001CB89E /* shaders_p.h */,
+				B50427421D05BFF8001CB89E /* transformation.cpp */,
+				B50427431D05BFF8001CB89E /* transformation.h */,
+				B53A99711D099919000D9198 /* coordinate_system.cpp */,
+				B53A99721D099919000D9198 /* coordinate_system.h */,
 			);
 			path = learn_opengl;
 			sourceTree = "<group>";
@@ -211,8 +226,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B50427441D05BFF8001CB89E /* transformation.cpp in Sources */,
 				B50427301D029F72001CB89E /* utill.cpp in Sources */,
+				B53A99731D099919000D9198 /* coordinate_system.cpp in Sources */,
 				B50427331D029FB6001CB89E /* trangle.cpp in Sources */,
+				B53A99761D099A3D000D9198 /* camera.cpp in Sources */,
 				B504272D1D029F25001CB89E /* shaders.cpp in Sources */,
 				B50427051D029D4E001CB89E /* main.cpp in Sources */,
 				B50427361D02A027001CB89E /* texture.cpp in Sources */,
