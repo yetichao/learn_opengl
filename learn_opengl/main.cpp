@@ -5,16 +5,20 @@
 #include "transformation.h"
 #include "coordinate_system.h"
 #include "camera.h"
+#include "camera_advance.h"
+
+#include "switch.h"
 
 int main()
 {
     //trangle();
     //drawShaders();
     //shaders_practise();
-     //texture();
+    //texture();
     //transformation();
     //coordinate();
-    camera();
+    camera::camera();
+    //camera_adv::camera_advance();
     return 0;
 }
 

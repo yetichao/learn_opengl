@@ -9,6 +9,7 @@
 #ifndef __learn_opengl__camera__
 #define __learn_opengl__camera__
 
+
 #include <stdio.h>
 // GLEW
 #define GLEW_STATIC
@@ -29,7 +30,9 @@
 #include "utill.h"
 #include <iostream>
 
+namespace camera {
 void camera();
+}
 
 
 #endif /* defined(__learn_opengl__camera__) */
