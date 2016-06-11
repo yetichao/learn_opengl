@@ -55,7 +55,7 @@ const GLchar* fragmentShaderSource4 = "#version 330 core\n"
                                       "uniform sampler2D ourTexture2;\n"
                                       "void main()\n"
                                       "{\n"
-                                      "color = mix(texture(ourTexture1, TexCoord), texture(ourTexture2, TexCoord), 0.2f);\n"
+                                      "color = mix(texture(ourTexture1, TexCoord), texture(ourTexture2, TexCoord), 0.3f);\n"
                                       "}\n\0";
 
 
@@ -209,6 +209,10 @@ void camera()
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     // Load, create texture and generate mipmaps
     image = SOIL_load_image("/Users/cc_xueqin/programming/learning/opengl/project/learn_opengl/res/awesomeface.png", &width, &height, 0, SOIL_LOAD_RGB);
+    if (image == NULL) {
+        std::cout << "ERROR::image is null\n" << std::endl;
+    }
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
     glGenerateMipmap(GL_TEXTURE_2D);
     SOIL_free_image_data(image);
     glBindTexture(GL_TEXTURE_2D, 0);

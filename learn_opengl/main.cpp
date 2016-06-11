@@ -7,7 +7,7 @@
 #include "camera.h"
 #include "camera_advance.h"
 
-#include "switch.h"
+#include "colors.h"
 
 int main()
 {
@@ -17,8 +17,9 @@ int main()
     //texture();
     //transformation();
     //coordinate();
-    camera::camera();
+    //camera::camera();
     //camera_adv::camera_advance();
+    colors::colors();
     return 0;
 }
 
