@@ -131,10 +131,7 @@ public:
     glm::mat4 GetViewMatrix()
     {
         //return glm::lookAt(this->Position, this->Position + this->Front, this->Up);
-        
-        
-        // Don't forget to replace glm::lookAt with your own version
-        // view = glm::lookAt(glm::vec3(camX, 0.0f, camZ), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+ 
         return calculate_lookAt_matrix(this->Position, this->Position + this->Front, this->Up);
     }
 
