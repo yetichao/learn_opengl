@@ -13,6 +13,8 @@
 #include "light_caster.h"
 #include "light_mutiple.h"
 
+#include "adv_depth_testing.h"
+
 int main()
 {
     //trangle();
@@ -29,7 +31,9 @@ int main()
     //materials::materials();
     //lighting_map::lightingMap();
     //light_caster::lightCaster();
-    light_mutiple::mutipleLight();
+    //light_mutiple::mutipleLight();
+    
+    adv_depth_testing::depthTesting();
     
     return 0;
 }
